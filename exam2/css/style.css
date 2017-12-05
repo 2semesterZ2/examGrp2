@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #FFDFBA;
+}
+.title h1 {
+	color: red;
+	text-align: center;
+}
+
+
+.image {
+	width: 600px;
+	height: 600px;
+	background-image: url(../images/phone.png);
+	display: table;
+	margin: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	
+}
+.box {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.popup .pick-button {
+	display: table;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 70px;
+	
+	
+}
+.button {
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background-color: #189AD3; 
+	border: none;
+    color: white;
+    padding: 18px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 30px;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+	
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+	
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+.popup h2 {
+	font-size: 40px;
+ margin-top: 70px;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+	text-align: center;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+
+}
