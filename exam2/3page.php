@@ -12,7 +12,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 
   <meta charset="utf-8">
 
-  <title>hallo</title>
+  <title>3 Page</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
