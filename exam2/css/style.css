@@ -1,57 +1,91 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-image: url(../images/full.jpg);
+
 	margin: 0;
 	padding: 0;
+
+}
+.title h1, .button, .popup h2 {
+	font-family: 'Work Sans', sans-serif;
+}
+.body-background {
+	background-image: url(../images/page2.png);
 	background-repeat: no-repeat;
-	
-	background-size: cover;
+	background-size: ;
 }
 .title h1 {
 	color: red;
 	text-align: center;
-}
 
+}
+audio {
+	width: 100%;
+
+
+}
 
 .image {
 	width: 600px;
-	height: 600px;
+	height: 460px;
 	background-image: url(../images/phone.png);
 	display: table;
 	margin: auto;
 	background-size: contain;
 	background-repeat: no-repeat;
-	
-	
+
+
 }
 .box {
   width: 40%;
   margin: 0 auto;
   text-align: center;
+
+
 }
 .popup .pick-button {
 	display: table;
 	text-align: center;
 	margin: auto;
 	margin-bottom: 70px;
-	
-	
+
+
+}
+.clearfix {
+	overflow: auto;
 }
 .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
-	background-color: #189AD3; 
+	background-color: #189AD3;
 	border: none;
-    color: white;
-    padding: 18px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  color: white;
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 	font-size: 30px;
+	border-radius: 5px;
 
 }
 
+.end-call {
+	display: inline-block;
+}
+.popup .end-call .button {
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background-color: #189AD3;
+	border: none;
+	color: white;
+	padding: 18px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 5px;
+
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -62,15 +96,15 @@ body {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-	
+
 }
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
-	
+#popup1 .popup {
+
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -81,11 +115,136 @@ body {
 
 }
 
+
+
+#popup2 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+
+#popup3 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+
+
+#popup4 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+
+#popup5 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+
+
+
+#popup6 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+#popup7 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+#popup8 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+#popup9 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+#popup0 .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
 .popup h2 {
 	font-size: 40px;
  margin-top: 70px;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+
 	text-align: center;
 }
 .popup .close {
@@ -138,27 +297,193 @@ body {
 .dick h2  {
 font-size: 65px;
 }
-.button3 {
-	cursor: pointer;
+
+
+.button1 {
+    cursor: pointer;
     transition: all 0.3s ease-out;
     border: none;
     color: white;
-    padding: 30px 30px;
+    padding: 35px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
     margin-top: 168px;
-	    margin-left: 7px;
+    margin-left: 268px;
+    /*background-color: brown;*/
+}
 
-	background-color: brown;
+.button2 {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+		margin-top: -113px;
+	margin-left: 279px;
+	/*background-color: brown;*/
+	display: table-caption;
+}
+.button3{
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	border: none;
+	color: white;
+	padding: 35px 35px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+	margin-top: -108px;
+	margin-left: 191px;
+	/*background-color: brown;*/
+	display: table-caption;
+}
+
+.button4{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: -62px;
+    margin-left: 116px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+.button5{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 74px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+
+.button6{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 19px;
+    margin-left: 76px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+.button7{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 123px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+.button8{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: -27px;
+    margin-left: 199px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+
+.button9{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: -75px;
+    margin-left: 288px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+
+.button0{
+	cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: -118px;
+    margin-left: 362px;
+    /*background-color: brown;*/
+    display: table-caption;
+}
+
+.popup .end-call .button {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #189AD3;
+    border: none;
+    color: white;
+    padding: 18px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-left: 145px;
+		margin-top: 40px;
+ }
+.popup .change-number {
+	display: inline-block;
+
+
 
 }
-.popup .change-number {
-	display: table;
+
+
+
+
+
+.restart {
 	text-align: center;
-	margin: auto;
-	margin-bottom: 70px;
-	
-	
+margin-top: 21%;
+
+}
+
+#spasiba h1 {
+	text-align: center;
+margin-top: 10%;
 }

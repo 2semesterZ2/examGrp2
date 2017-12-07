@@ -6,7 +6,7 @@ if($answer != ""){
 file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 }
 }
-?> 
+?>
 <html>
 <head>
 
@@ -22,27 +22,35 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 </head>
 
 
-	
-	
+
+
 <body>
 
 
 <style>
 div#spasiba {
-    display: none;
-    background: white;
-    width: 70%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    min-height: 400px;
+  display: none;
+background: #333;
+width: 70%;
+
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+min-height: 480px;
+margin-top: -155px;
+    transition: all 5s ease-in-out;
 }
 </style>
 
 <div id="spasiba">
+
 <h1>Tcnjdflkjvndfvjkvbkgj</h1>
+<div class="restart">
+    <a class="button" href="hallo.html">restart</a>
+</div>
+
 </div>
 
 
@@ -53,17 +61,18 @@ div#spasiba {
 <div class="no"> <input type="submit" name="data" value="no"> </div>
 
 </form>
-</div>
-	
 
-		
+</div>
+
+
+
 <script type="text/javascript">
 if (window.location.search.indexOf("data") !== -1){
   $("#spasiba").show();
 }
 </script>
-	
-	
-	
+
+
+
 </body>
 </html>
