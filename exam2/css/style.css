@@ -20,13 +20,72 @@ font-family: 'Inconsolata', monospace;
 	font-size: 45px;
 	margin: 4%;
 }
-
-
-.dots > span {
-
-  animation: Fwrite 3s steps(14, start) infinite, Wbar 0.5s step-end infinite;
-    -webkit-animation: Fwrite 3s steps(14, start) infinite, Wbar 0.5s step-end infinite;
+ /*Justynka did this. Scroll below to see when this shit ends. It's so fucking long omg. This code I used from the website we found*/
+ /*The way this code works out is that there is a background on top of the text you want and then it starts appearing letter by letter.*/
+ /*To add dots to the same line as our text, I wrote that display option below.*/
+ /*Then I changed the background color for the #dots > span compare with the example code and you will see that in example it's white*/
+ /*Keyframes shit happening there is the animation itself, speed of our dots appearing and that's it. I will mark where it all ends*/
+#dots {
+  position: relative;
+	display: inline;
 }
+
+#dots > span {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #363636;
+    animation: Fwrite 2s steps(14, start) infinite;
+    -webkit-animation: Fwrite 2s steps(14, start) infinite;
+}
+
+
+@keyframes Fwrite {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes Wbar {
+  0% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: black;
+  }
+  100% {
+    border-left-color: transparent;
+  }
+}
+
+@-webkit-keyframes Fwrite {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes Wbar {
+  0% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: black;
+  }
+  100% {
+    border-left-color: transparent;
+  }
+}
+/*Here it all ends.*/
+/*I actually tried removing everything from these keyframes except one option for "fwrite" with these two widths and it still worked.*/
+/*But I left it just in case, because you are the smart ones here. <3*/
+
+
 audio {
 	width: 100%;
 }
