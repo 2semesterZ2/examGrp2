@@ -1,13 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-
+	background-color: #363636;
 	margin: 0;
 	padding: 0;
 
 }
-.title h1, .button, .popup h2 {
-	font-family: 'Work Sans', sans-serif;
+.title h1, .button, .popup h2, .question h2{
+font-family: 'Inconsolata', monospace;
 }
 .body-background {
 	background-image: url(../images/page2.png);
@@ -15,31 +15,146 @@ body {
 	background-size: ;
 }
 .title h1 {
-	color: red;
+	color: white;
 	text-align: center;
+	font-size: 45px;
+	margin: 4%;
+}
 
+
+.dots > span {
+
+  animation: Fwrite 3s steps(14, start) infinite, Wbar 0.5s step-end infinite;
+    -webkit-animation: Fwrite 3s steps(14, start) infinite, Wbar 0.5s step-end infinite;
 }
 audio {
 	width: 100%;
+}
 
+
+#ignore .button {
+	background-color: #bc1c1c;
+	float: right;
+	margin-bottom: 10%;
+	margin-right: 10%;
+	margin-top: 1%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 30px 50px;
+}
+
+#pick-up .button {
+
+float: left;
+margin-bottom: 10%;
+margin-left: 10%;
+margin-top: 1%;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+padding: 30px 50px;
+}
+
+#spasiba {
+display: none;
+background: white;
+width: 70%;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+min-height: 480px;
+border-radius: 5px;
+margin-top: -155px;
+transition: all 5s ease-in-out;
+}
+
+.restart .button {
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background-color: #99b83b;
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 25px 35px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+}
+#ring {
+display: none;
+}
+.phone {
+	margin-top: 31px;
+	margin-left: -2%;
 
 }
 
-.image {
+.main {
 	width: 600px;
 	height: 460px;
-	background-image: url(../images/phone.png);
+	background-image: url(../images/main.png);
 	display: table;
 	margin: auto;
 	background-size: contain;
 	background-repeat: no-repeat;
+	z-index: 100000000;
+	position: absolute;
+	margin-left: 27%;
+}
 
+.back {
+	width: 600px;
+	height: 265px;
+	background-image: url(../images/back.png);
+	display: table;
+	margin: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 139px;
+	margin-left: 36%;
 
 }
+
+.handle {
+	width: 570px;
+	height: 336px;
+	background-image: url(../images/handle.png);
+	display: table;
+	margin: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 8px;
+	margin-left: 27.6%;
+	position: relative;
+	z-index: 1;
+
+}
+
+.handle {
+	animation: handle 1s infinite;
+}
+@keyframes handle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(20deg); }
+   95% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
 .box {
   width: 40%;
   margin: 0 auto;
   text-align: center;
+	margin-top: 12%;
 
 
 }
@@ -48,8 +163,6 @@ audio {
 	text-align: center;
 	margin: auto;
 	margin-bottom: 70px;
-
-
 }
 .clearfix {
 	overflow: auto;
@@ -57,9 +170,10 @@ audio {
 .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
-	background-color: #189AD3;
+	background-color: #99b83b;
 	border: none;
   color: white;
+	font-weight: bold;
   padding: 18px 35px;
   text-align: center;
   text-decoration: none;
@@ -67,6 +181,21 @@ audio {
 	font-size: 30px;
 	border-radius: 5px;
 
+}
+.ignore {
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background-color: #99b83b;
+	border: none;
+  color: white;
+	font-weight: bold;
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-size: 30px;
+	border-radius: 5px;
+	float: left;
 }
 
 .end-call {
@@ -96,6 +225,7 @@ audio {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+	z-index: 100000000000000000000000000;
 
 }
 .overlay:target {
@@ -260,42 +390,56 @@ audio {
 
 
 .yes input[type=submit] {
-	font-size: 50px;
+	font-size: 40px;
 	width: 290px;
-    background-color: #4CAF50;
+	background-color: #99b83b;
     border: none;
     color: white;
-    padding: 32px 32px;
     text-decoration: none;
     margin: 4px 12px;
     cursor: pointer;
 	float: left;
-	text-transform: lowercase;
+	text-transform: uppercase;
+		transition: all 0.3s ease-out;
+		font-weight: bold;
+		padding: 35px 35px;
+			border-radius: 5px;
+			display: inline-block;
 	}
 
+
+
 .no input[type=submit] {
-	font-size: 50px;
+	font-size: 40px;
 	width: 290px;
-    background-color: red;
+	background-color: #bc1c1c;
     border: none;
     color: white;
-    padding: 32px 32px;
     text-decoration: none;
     margin: 4px 12px;
     cursor: pointer;
-	text-transform: lowercase;
+	float: left;
+	text-transform: uppercase;
+		transition: all 0.3s ease-out;
+		font-weight: bold;
+		padding: 35px 35px;
+			border-radius: 5px;
+			display: inline-block;
+
 	}
 
 
- .dick {
+
+ .question {
 	width: 628px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 18%;
 }
 
-.dick h2  {
+.question h2  {
 font-size: 65px;
+color: white;
 }
 
 
@@ -311,7 +455,7 @@ font-size: 65px;
     font-size: 30px;
     margin-top: 168px;
     margin-left: 268px;
-    /*background-color: brown;*/
+    background-color: brown;
 }
 
 .button2 {

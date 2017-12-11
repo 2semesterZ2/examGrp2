@@ -27,22 +27,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 <body>
 
 
-<style>
-div#spasiba {
-  display: none;
-background: #333;
-width: 70%;
 
-position: absolute;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-min-height: 480px;
-margin-top: -155px;
-    transition: all 5s ease-in-out;
-}
-</style>
 
 <div id="spasiba">
 
@@ -54,7 +39,7 @@ margin-top: -155px;
 </div>
 
 
-	<div class="dick">
+	<div class="question">
 		<h2>Did you enjoy it?</h2>
 <form method="GET" action="./3page.php"  >
 <div class="yes"> <input type="submit" name="data" value="yes"> </div>

@@ -6,24 +6,43 @@
 <meta name="description" content="The HTML5 Herald">
 <meta name="author" content="SitePoint">
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Quattrocento" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 <div class="title">
-  <h1>What is Lorem Ipsum?</h1>
+  <h1>Incoming call...</h1>
+</div>
+<div class="phone">
+
+<div class="main"> </div>
+<div class="back"> </div>
+<div class="handle"> </div>
 </div>
 
 
 
-<div class="image"> </div>
+<audio id="ring" controls>
+  <source src="sound/phone-ringing.mp3" type="audio/mp3">
+</audio>
+
+
+
+<div class="clearfix">
 <!--Button to pick up the phone-->
-<div class="box"> <a class="button" href="#popup1">Pick up</a> </div>
-
-
+<div id="pick-up"> <a class="button" href="#popup1">Pick up</a> </div>
 <!--END-->
-
+<!--Button to ignore the call-->
+<div id="ignore"> <a class="button" href="#popup1">Ignore</a> </div>
+<!--END-->
 <!--Pop up window - You missed a call-->
+</div>
+
+
+
+
 
 <div id="popup1" class="overlay">
   <div class="popup">
@@ -37,6 +56,37 @@
 
 <!--END pop up window-->
 
+
+<script type="text/javascript">
+
+var play = true;
+
+var myAudio = document.getElementById("ring");
+
+function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 37: //left arrow
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+  return false;
+}
+
+window.addEventListener("keydown", onKeyDown, false);
+
+
+
+
+
+
+
+</script>
 
 </body>
 </html>
