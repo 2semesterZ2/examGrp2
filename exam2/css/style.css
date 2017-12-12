@@ -38,7 +38,19 @@ font-family: 'Inconsolata', monospace;
     animation: Fwrite 2s steps(14, start) infinite;
     -webkit-animation: Fwrite 2s steps(14, start) infinite;
 }
+/*#running-text {
+  position: relative;
+	display: inline;
+}
 
+#running-text > span {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #363636;
+    animation: Fwrite 2s steps(14, start) infinite;
+    -webkit-animation: Fwrite 2s steps(14, start) infinite;
+}*/
 
 @keyframes Fwrite {
   0% {
@@ -663,13 +675,14 @@ color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 27px;
     border-radius: 5px;
-    margin-left: 145px;
+    margin-left: 80px;
 		margin-top: 40px;
  }
 .popup .change-number {
 	display: inline-block;
+	margin-left: 35px;
 }
 
 
