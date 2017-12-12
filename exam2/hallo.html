@@ -56,6 +56,9 @@
     <h2>You missed a call! <br>
       Try to call back!</h2>
     <a class="close" href="#">&times;</a>
+    <audio id="voice-lady" controls>
+      <source src="sound/voice-lady.mp3" type="audio/mp3">
+    </audio>
     <div class="pick-button"> <a class="button" href="2page.html">Call back</a> </div>
 
   </div>
@@ -68,13 +71,14 @@
 
  //OUR JAVASCRIPT OF TYPEWRITTING STUFF IS HERE.
   // I only replaced our id in it.
-var lvalue= document.getElementById("dots").innerHTML;
-var textLength = lvalue.length();
+// var lvalue= document.getElementById("dots").innerHTML;
+// var textLength = lvalue.length();
 // here it ends.
 
 var play = true;
 
 var myAudio = document.getElementById("ring");
+var my2Audio = document.getElementById("voice-lady");
 
 function onKeyDown(event) {
         switch (event.keyCode) {
@@ -94,7 +98,10 @@ function onKeyDown(event) {
 window.addEventListener("keydown", onKeyDown, false);
 
 
-
+$("#pick-up").on("click",function(){
+  myAudio.pause();
+  my2Audio.play();
+})
 
 
 

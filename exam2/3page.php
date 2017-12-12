@@ -30,8 +30,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 
 
 <div id="spasiba">
-
-<h1>Tcnjdflkjvndfvjkvbkgj</h1>
+<h1>Thank you for calling.<br>Hope to hear you again!  </h1>
 <div class="restart">
     <a class="button" href="hallo.html">restart</a>
 </div>
@@ -55,6 +54,16 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 if (window.location.search.indexOf("data") !== -1){
   $("#spasiba").show();
 }
+
+
+
+
+
+
+
+
+
+
 </script>
 
 

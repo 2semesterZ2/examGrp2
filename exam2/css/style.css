@@ -6,7 +6,7 @@ body {
 	padding: 0;
 
 }
-.title h1, .button, .popup h2, .question h2{
+.title h1, .button, .popup h2, .question h2, #spasiba h1, .popup {
 font-family: 'Inconsolata', monospace;
 }
 .body-background {
@@ -111,6 +111,7 @@ margin-top: 1%;
 text-transform: uppercase;
 letter-spacing: 0.5px;
 padding: 30px 50px;
+background-color: #99b83b;
 }
 
 #spasiba {
@@ -131,7 +132,7 @@ transition: all 5s ease-in-out;
 .restart .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
-	background-color: #99b83b;
+	background-color: #3A89ED;
 	border: none;
 	color: white;
 	font-weight: bold;
@@ -213,15 +214,13 @@ display: none;
   width: 40%;
   margin: 0 auto;
   text-align: center;
-	margin-top: 12%;
-
-
 }
 .popup .pick-button {
 	display: table;
 	text-align: center;
 	margin: auto;
-	margin-bottom: 70px;
+	margin-bottom: 25px;
+	margin-top: 45px;
 }
 .clearfix {
 	overflow: auto;
@@ -229,7 +228,7 @@ display: none;
 .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
-	background-color: #99b83b;
+	background-color: #3A89ED;
 	border: none;
   color: white;
 	font-weight: bold;
@@ -237,7 +236,7 @@ display: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-	font-size: 30px;
+	font-size: 27px;
 	border-radius: 5px;
 
 }
@@ -263,7 +262,7 @@ display: none;
 .popup .end-call .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
-	background-color: #189AD3;
+	background-color: #bc1c1c;
 	border: none;
 	color: white;
 	padding: 18px 35px;
@@ -513,8 +512,8 @@ color: white;
     display: inline-block;
     font-size: 30px;
     margin-top: 168px;
-    margin-left: 268px;
-    background-color: brown;
+    margin-left: 616px;
+    /*background-color: brown;*/
 }
 
 .button2 {
@@ -527,7 +526,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
 		margin-top: -113px;
-	margin-left: 279px;
+	margin-left: 539px;
 	/*background-color: brown;*/
 	display: table-caption;
 }
@@ -541,7 +540,7 @@ color: white;
 	text-decoration: none;
 	font-size: 30px;
 	margin-top: -108px;
-	margin-left: 191px;
+	margin-left: 451px;
 	/*background-color: brown;*/
 	display: table-caption;
 }
@@ -556,7 +555,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: -62px;
-    margin-left: 116px;
+    margin-left: 376px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -571,7 +570,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: 5px;
-    margin-left: 74px;
+    margin-left: 336px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -587,7 +586,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: 19px;
-    margin-left: 76px;
+    margin-left: 338px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -602,7 +601,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: 5px;
-    margin-left: 123px;
+    margin-left: 383px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -617,7 +616,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: -27px;
-    margin-left: 199px;
+    margin-left: 459px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -633,7 +632,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: -75px;
-    margin-left: 288px;
+    margin-left: 548px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -649,7 +648,7 @@ color: white;
     text-decoration: none;
     font-size: 30px;
     margin-top: -118px;
-    margin-left: 362px;
+    margin-left: 620px;
     /*background-color: brown;*/
     display: table-caption;
 }
@@ -657,7 +656,7 @@ color: white;
 .popup .end-call .button {
     cursor: pointer;
     transition: all 0.3s ease-out;
-    background-color: #189AD3;
+    background-color: #bc1c1c;
     border: none;
     color: white;
     padding: 18px 35px;
@@ -671,9 +670,6 @@ color: white;
  }
 .popup .change-number {
 	display: inline-block;
-
-
-
 }
 
 
@@ -682,11 +678,12 @@ color: white;
 
 .restart {
 	text-align: center;
-margin-top: 21%;
+margin-top: 10%;
 
 }
 
 #spasiba h1 {
 	text-align: center;
 margin-top: 10%;
+font-size: 45px;
 }
