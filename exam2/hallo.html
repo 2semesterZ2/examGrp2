@@ -16,11 +16,7 @@
   <!-- Justynka added this <div id="dots">...<span></span> -->
   <h1>Incoming call<div id="dots">...<span></span></h1>
     <!-- It ends here -->
-    <!-- LOOK DOWN IN THIS HTML TO SEE JAVASCRIPT PIECE!!!!!!!!!!!! -->
-        <!-- LOOK DOWN IN THIS HTML TO SEE JAVASCRIPT PIECE!!!!!!!!!!!! -->
-            <!-- LOOK DOWN IN THIS HTML TO SEE JAVASCRIPT PIECE!!!!!!!!!!!! -->
-                <!-- LOOK DOWN IN THIS HTML TO SEE JAVASCRIPT PIECE!!!!!!!!!!!! -->
-                    <!-- LOOK DOWN IN THIS HTML TO SEE JAVASCRIPT PIECE!!!!!!!!!!!! -->
+
 </div>
 <div class="phone">
 
@@ -42,7 +38,7 @@
 <div id="pick-up"> <a class="button" href="#popup1">Pick up</a> </div>
 <!--END-->
 <!--Button to ignore the call-->
-<div id="ignore"> <a class="button" href="#popup1">Ignore</a> </div>
+<div id="ignore"> <a class="button" href="#ignore-popup">Ignore</a> </div>
 <!--END-->
 <!--Pop up window - You missed a call-->
 </div>
@@ -50,20 +46,44 @@
 
 
 
-
+<!-- pickup popup -->
 <div id="popup1" class="overlay">
   <div class="popup">
-    <h2><div id="running-text">Here is the text you are listening now<span></span></h2>
+    <div id="running-text">
+    <p>Hello. you are calling Hallo hostel’s central</p>
+      <p> and if you want to call hostels owner, please,</p>
+      <p>press 1. To call reception press 2. To learn </p>
+       <p>about town, press 3. If you want to hear</p>
+       <p>feedback from hostels guest, press 4. To say hi</p>
+      <p>to your mom press 5. In case of problems or</p>
+      <p>questions, call phone service under number 6.</p>
+      <p>if you want to continue press "call". <span>|</span></p>
+    </div>
     <a class="close" href="#">&times;</a>
     <audio id="voice-lady" controls>
       <source src="sound/voice-lady.mp3" type="audio/mp3">
     </audio>
     <div class="pick-button"> <a class="button" href="2page.html">Call</a> </div>
 
+
+</div>
+</div>
+<!--END pop up window-->
+
+<!-- ignore popup -->
+<div id="ignore-popup" class="overlay">
+  <div class="popup">
+    <h2><div id="running-text">Here is the text you are listening now<span></span></h2>
+    <a class="close" href="#">&times;</a>
+
+    <div class="pick-button"> <a class="button" href="2page.html">Call</a> </div>
+
   </div>
 </div>
-
+</div>
 <!--END pop up window-->
+
+
 
 
 <script type="text/javascript">

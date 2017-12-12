@@ -6,7 +6,7 @@ body {
 	padding: 0;
 
 }
-.title h1, .button, .popup h2, .question h2, #spasiba h1, .popup {
+.title h1, .button, .popup h2, .question h2, #spasiba h1, .popup, .popup p {
 font-family: 'Inconsolata', monospace;
 }
 .body-background {
@@ -38,19 +38,7 @@ font-family: 'Inconsolata', monospace;
     animation: Fwrite 2s steps(14, start) infinite;
     -webkit-animation: Fwrite 2s steps(14, start) infinite;
 }
-/*#running-text {
-  position: relative;
-	display: inline;
-}
 
-#running-text > span {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    background-color: #363636;
-    animation: Fwrite 2s steps(14, start) infinite;
-    -webkit-animation: Fwrite 2s steps(14, start) infinite;
-}*/
 
 @keyframes Fwrite {
   0% {
@@ -232,7 +220,7 @@ display: none;
 	text-align: center;
 	margin: auto;
 	margin-bottom: 25px;
-	margin-top: 45px;
+	margin-top: 15px;
 }
 .clearfix {
 	overflow: auto;
@@ -314,6 +302,20 @@ display: none;
   transition: all 5s ease-in-out;
 
 }
+
+
+ #ignore-popup .popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
 
 
 
@@ -699,4 +701,56 @@ margin-top: 10%;
 	text-align: center;
 margin-top: 10%;
 font-size: 45px;
+}
+
+
+
+
+
+#running-text p{
+	font-size: 25px;
+	padding: 0;
+	margin-top: 2%;
+	margin-bottom: 0;
+	margin-left: 3%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+#running-text p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+
+
+#running-text span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+
+
+
+
+#voice-lady {
+	margin-top: 3%;
 }
