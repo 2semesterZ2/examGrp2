@@ -10,8 +10,8 @@
 
 	<!--Button 1-->
 
-	    <div class="box">
-	    <a class="button1" href="#popup1"></a>
+	    <div class="box"  >
+	    <a class="button1"  href="#popup1" onclick="playSound();" ></a>
 	</div>
 
 	    <!--END Button 1-->
@@ -21,10 +21,9 @@
 	    <div class="popup">
 	        <h2>button1</h2>
 	        <a class="close" href="#">&times;</a>
-	        <audio controls>
-	  <source src="sound/three.wav" type="audio/wav">
-
-	</audio>
+					<audio id="hostel-history" controls>
+			      <source src="sound/hostel-history.mp3" type="audio/mp3">
+			    </audio>
 	        <div class="change-number">
 	            <a class="button" href="2page.html">Call somebody else</a>
 	        </div>
@@ -235,6 +234,21 @@
 																																						<a href="3page.php">
 																																							<img class="arrow-right" src="images/arrow-right.png"> </img>
 																																						</a>
+
+
+
+
+				<script type="text/javascript">
+
+			     function playSound() {
+			           var my3Audio = document.getElementsByClassName(".box");
+			           my3Audio.play();
+			       }
+			     </script>
+
+
+
+
 
 
 

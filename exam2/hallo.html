@@ -50,14 +50,14 @@
 <div id="popup1" class="overlay">
   <div class="popup">
     <div id="running-text">
-    <p>Hello. you are calling Hallo hostel’s central</p>
-      <p> and if you want to call hostels owner, please,</p>
-      <p>press 1. To call reception press 2. To learn </p>
-       <p>about town, press 3. If you want to hear</p>
-       <p>feedback from hostels guest, press 4. To say hi</p>
-      <p>to your mom press 5. In case of problems or</p>
-      <p>questions, call phone service under number 6.</p>
-      <p>if you want to continue press "call". <span>|</span></p>
+    <p id="move">Hello. you are calling Hallo hostel’s central
+      and if you want to call hostels owner, please,
+    press 1. To call reception press 2. To learn
+       about town, press 3. If you want to hear
+      feedback from hostels guest, press 4. To say hi
+      to your mom press 5. In case of problems or
+      questions, call phone service under number 6.
+      if you want to continue press "call". </p>
     </div>
     <a class="close" href="#">&times;</a>
     <audio id="voice-lady" controls>
@@ -96,11 +96,13 @@
 // var textLength = lvalue.length();
 // here it ends.
 
+
+
 var play = true;
 
 var myAudio = document.getElementById("ring");
 var my2Audio = document.getElementById("voice-lady");
-
+//  sound starts and pauses on left arrow click
 function onKeyDown(event) {
         switch (event.keyCode) {
             case 37: //left arrow
@@ -118,13 +120,14 @@ function onKeyDown(event) {
 
 window.addEventListener("keydown", onKeyDown, false);
 
-
+// ringing stops and voice lady sound starts on pickup button click (in popup window)
 $("#pick-up").on("click",function(){
   myAudio.pause();
   my2Audio.play();
 
 })
 
+// stop sound on X press
 $(".close").on("click",function(){
   my2Audio.pause();
 
@@ -132,7 +135,9 @@ $(".close").on("click",function(){
 })
 
 
+
 </script>
+
 
 </body>
 </html>
