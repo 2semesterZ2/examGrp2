@@ -73,10 +73,12 @@
 <!-- ignore popup -->
 <div id="ignore-popup" class="overlay">
   <div class="popup">
-    <h2><div id="running-text">Here is the text you are listening now<span></span></h2>
+    <h2><div id="running-text">thank you... :(<span></span></h2>
     <a class="close" href="#">&times;</a>
 
-    <div class="pick-button"> <a class="button" href="2page.html">Call</a> </div>
+    <div class="restart">
+        <a class="button" href="hallo.html">restart</a>
+    </div>
 
   </div>
 </div>
@@ -120,9 +122,14 @@ window.addEventListener("keydown", onKeyDown, false);
 $("#pick-up").on("click",function(){
   myAudio.pause();
   my2Audio.play();
+
 })
 
+$(".close").on("click",function(){
+  my2Audio.pause();
 
+
+})
 
 
 </script>

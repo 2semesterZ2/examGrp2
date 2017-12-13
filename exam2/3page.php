@@ -39,7 +39,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 
 
 	<div class="question">
-		<h2>Did you enjoy it?</h2>
+		<h2>Did you learn something new about Hallo hostel?</h2>
 <form method="GET" action="./3page.php"  >
 <div class="yes"> <input type="submit" name="data" value="yes"> </div>
 <div class="no"> <input type="submit" name="data" value="no"> </div>
@@ -47,7 +47,9 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 </form>
 
 </div>
-
+<a href="2page.html">
+<img class="three-arrow-left" src="images/arrow-left.png"> </img>
+</a>
 
 
 <script type="text/javascript">
