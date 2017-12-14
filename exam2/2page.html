@@ -4,145 +4,66 @@
 <meta charset="utf-8">
 <title>Page 2</title>
 	<link rel="stylesheet" href="css/style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="js/typed.js"></script>
+		<!-- <script type="">
+
+
+
+		</script> -->
 </head>
 
 <body class="body-background" >
 
-	<!--Button 1-->
-
-	    <div class="box"  >
-	    <a class="button1"  href="#popup1" onclick="playSound();" ></a>
-	</div>
-
-	    <!--END Button 1-->
-	    <!--Sound for number 1-->
-
 	<div id="popup1" class="overlay">
 	    <div class="popup">
-	        <h2>button1</h2>
+	        <h2>heading</h2>
+					<p>paragraph</p>
 	        <a class="close" href="#">&times;</a>
-					<audio id="hostel-history" controls>
-			      <source src="sound/hostel-history.mp3" type="audio/mp3">
+					<audio id="audiotrack" controls>
+			      <source src="" type="audio/mp3">
 			    </audio>
 	        <div class="change-number">
 	            <a class="button" href="2page.html">Call somebody else</a>
 	        </div>
-
-
 	    </div>
 	</div>
-	    <!--END Sound for number 1-->
 
-			<!--Button 2-->
+	<!--Button 1-->
 
-					<div class="box">
-					<a class="button2" href="#popup2"></a>
-			</div>
+  <div class="box">
+	    <a class="button1" href="#popup1"
+				onclick="playSound('sound/hostel-history.mp3'); setPopupText(button1Heading, button1Paragraph);" ></a>
+	</div>
 
-					<!--END Button 2-->
-					<!--Sound for number 2-->
+	<div class="box">
+			<a class="button2" href="#popup1" onclick="playSound('sound/aarhus-guide.mp3'); setPopupText(button2Heading, button2Paragraph);"></a>
+	</div>
 
-			<div id="popup2" class="overlay">
-					<div class="popup">
-							<h2>button2</h2>
-							<a class="close" href="#">&times;</a>
-							<audio controls>
-				<source src="sound/three.wav" type="audio/wav">
-
-			</audio>
-			<div class="clearfix">
-							<div class="change-number">
-									<a class="button" href="2page.html">Call somebody else</a>
-							</div>
+	<div class="box">
+			<a class="button3" href="#popup1" onclick="playSound('sound/voice-lady.mp3'); setPopupText(button3Heading, button3Paragraph);"></a>
+	</div>
 
 
-
-</div>
-					</div>
-			</div>
-					<!--END Sound for number 2-->
-
-					<!--Button 3-->
-										<div class="box">
-										<a class="button3" href="#popup3"></a>
-						</div>
-										<!--END Button 3-->
-										<!--Sound for number 3-->
-						<div id="popup3" class="overlay">
-										<div class="popup">
-														<h2>button3</h2>
-														<a class="close" href="#">&times;</a>
-														<audio controls>
-								<source src="sound/three.wav" type="audio/wav">
-						</audio>
-														<div class="change-number">
-																		<a class="button" href="2page.html">Call somebody else</a>
-														</div>
-
-
-										</div>
-						</div>
-										<!--END Sound for number 3-->
 										<!--Button 4-->
-														<div class="box">
+										<div class="box">
 														<a class="button4" href="#popup4"></a>
 										</div>
 														<!--END Button 4-->
 														<!--Sound for number 4-->
-										<div id="popup4" class="overlay">
-														<div class="popup">
-																		<h2>button4</h2>
-																		<a class="close" href="#">&times;</a>
-																		<audio controls>
-												<source src="sound/three.wav" type="audio/wav">
-										</audio>
-																		<div class="change-number">
-																						<a class="button" href="2page.html">Call somebody else</a>
-																		</div>
-
-
-														</div>
-										</div>
 														<!--END Sound for number 4-->
 														<!--Button 5-->
 																		<div class="box">
 																		<a class="button5" href="#popup5"></a>
 														</div>
-																		<!--END Button 5-->
-																		<!--Sound for number 5-->
-														<div id="popup5" class="overlay">
-																		<div class="popup">
-																						<h2>button5</h2>
-																						<a class="close" href="#">&times;</a>
-																						<audio controls>
-																<source src="sound/three.wav" type="audio/wav">
-														</audio>
-																						<div class="change-number">
-																										<a class="button" href="2page.html">Call somebody else</a>
-																						</div>
 
-																		</div>
-														</div>
 																		<!--END Sound for number 5-->
 																		<!--Button 6-->
 																						<div class="box">
 																						<a class="button6" href="#popup6"></a>
 																		</div>
-																						<!--END Button 6-->
-																						<!--Sound for number 6-->
-																		<div id="popup6" class="overlay">
-																						<div class="popup">
-																										<h2>button6</h2>
-																										<a class="close" href="#">&times;</a>
-																										<audio controls>
-																				<source src="sound/three.wav" type="audio/wav">
-																		</audio>
-																										<div class="change-number">
-																														<a class="button" href="2page.html">Call somebody else</a>
-																										</div>
 
-																						</div>
-																		</div>
+
 																						<!--END Sound for number 6-->
 																						<!--Button 7-->
 																										<div class="box">
@@ -150,20 +71,7 @@
 																						</div>
 																										<!--END Button 7-->
 																										<!--Sound for number 7-->
-																						<div id="popup7" class="overlay">
-																										<div class="popup">
-																														<h2>button7</h2>
-																														<a class="close" href="#">&times;</a>
-																														<audio controls>
-																								<source src="sound/three.wav" type="audio/wav">
-																						</audio>
-																														<div class="change-number">
-																																		<a class="button" href="2page.html">Call somebody else</a>
-																														</div>
 
-
-																										</div>
-																						</div>
 																										<!--END Sound for number 7-->
 																										<!--Button 8-->
 																														<div class="box">
@@ -171,20 +79,7 @@
 																										</div>
 																														<!--END Button 8-->
 																														<!--Sound for number 8-->
-																										<div id="popup8" class="overlay">
-																														<div class="popup">
-																																		<h2>button8</h2>
-																																		<a class="close" href="#">&times;</a>
-																																		<audio controls>
-																												<source src="sound/three.wav" type="audio/wav">
-																										</audio>
-																																		<div class="change-number">
-																																						<a class="button" href="2page.html">Call somebody else</a>
-																																		</div>
 
-
-																														</div>
-																										</div>
 																														<!--END Sound for number 8-->
 																														<!--Button 9-->
 																																		<div class="box">
@@ -192,40 +87,13 @@
 																														</div>
 																																		<!--END Button 9-->
 																																		<!--Sound for number 9-->
-																														<div id="popup9" class="overlay">
-																																		<div class="popup">
-																																						<h2>button9</h2>
-																																						<a class="close" href="#">&times;</a>
-																																						<audio controls>
-																																<source src="sound/three.wav" type="audio/wav">
-																														</audio>
-																																						<div class="change-number">
-																																										<a class="button" href="2page.html">Call somebody else</a>
-																																						</div>
 
-
-																																		</div>
-																														</div>
 																																		<!--END Sound for number 9-->
 																																		<!--Button 0-->
 																																						<div class="box">
 																																						<a class="button0" href="#popup0"></a>
 																																		</div>
 																																						<!--END Button 0-->
-																																						<!--Sound for number 0-->
-																																		<div id="popup0" class="overlay">
-																																						<div class="popup">
-																																										<h2>button0</h2>
-																																										<a class="close" href="#">&times;</a>
-																																										<audio controls>
-																																				<source src="sound/three.wav" type="audio/wav">
-																																		</audio>
-																																										<div class="change-number">
-																																														<a class="button" href="2page.html">Call somebody else</a>
-																																										</div>
-
-																																						</div>
-																																		</div>
 																																						<!--END Sound for number 0-->
 
 																																							<a href="hallo.html">
@@ -238,19 +106,44 @@
 
 
 
-				<script type="text/javascript">
+		<script type="text/javascript">
 
-			     function playSound() {
-			           var my3Audio = document.getElementsByClassName(".box");
-			           my3Audio.play();
-			       }
-			     </script>
+				var button1Heading = "Hotel history";
+				var button1Paragraph = "Lorem Ipsum is simply dummy text's of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy";
 
+				var button2Heading = "Aarhus guide";
+				var button2Paragraph = "Lorem Ipsum is simply";
 
+				var button3Heading = "Aarhus guide 33";
+				var button3Paragraph = "Lorem Ipsum is simpl 333y";
 
+		    function playSound(audioName) {
+					
+		           var soundElementInPopup = document.getElementById("audiotrack");
+							 soundElementInPopup.src = audioName;
+		           soundElementInPopup.play();
+	       }
 
+				 function setPopupText(heading, paragraph){
+					 document.querySelector(".popup h2").innerText = heading;
+					//  document.querySelector(".popup p").innerText = paragraph;
 
+					//https://codepen.io/lowercase/pen/BCJsf
+					 $(".popup p").typed({
+	            strings: [paragraph],
+	            typeSpeed: 30, // typing speed
+	            backDelay: 750, // pause before backspacing
+	            loop: false, // loop on or off (true or false)
+	            loopCount: false, // number of loops, false = infinite
+	            callback: function(){ } // call function after typing is done
+	        });
+				 }
 
+				 $(".close").on("click",function(){
+					 document.getElementById("audiotrack").pause();
+				 })
+
+	     </script>
 
 </body>
 </html>

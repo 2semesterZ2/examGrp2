@@ -547,7 +547,7 @@ color: white;
     font-size: 30px;
 		margin-top: -113px;
 	margin-left: 539px;
-	/*background-color: brown;*/
+	background-color: brown;
 	display: table-caption;
 }
 .button3{
@@ -735,10 +735,9 @@ font-size: 45px;
 	margin-top: 2%;
 	margin-bottom: 0;
 	margin-left: 3%;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  
+	/* white-space: nowrap; */
+/* overflow: hidden; */
+/* width: 30em; */
 }
 
 #voice-lady {
