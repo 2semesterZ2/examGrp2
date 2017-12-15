@@ -243,7 +243,7 @@ display: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-	font-size: 27px;
+	font-size: 23px;
 	border-radius: 5px;
 
 }
@@ -681,7 +681,7 @@ color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 27px;
+    font-size: 23px;
     border-radius: 5px;
     margin-left: 80px;
 		    margin-top: 5%;
@@ -699,6 +699,9 @@ color: white;
 	display: block;
 float: left;
     margin-top: 5%;
+		font-size: 23px;
+		margin-right: 6%;
+		    margin-left: 4%;
 }
 
 
