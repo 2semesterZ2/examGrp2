@@ -32,9 +32,9 @@ $("#pick-up").on("click",function(){
   }
 
   typingTextEffect = new Typed('#move', {
-    strings: ['Hello. you are calling Hallo hostel’s central and if you want to call hostels owner, please, press 1. To call reception press 2. To learn about town, press 3. If you want to hear '+
-    'feedback from hostels guest, press 4. To say hi to your mom press 5. In case of problems or questions, call phone service under number 6.if you want to continue press "call". '],
-    typeSpeed: 30,
+    strings: ['Hello. You are calling Hallo hostel’s central and if you want to call hostels owner, please, press 1. To call reception press 2. To learn about town, press 3. If you want to hear '+
+    'feedback from hostels guest, press 4. To say hi to your mom press 5. In case of problems or questions, call phone service under number 6. If you want to continue press "call". '],
+    typeSpeed: 50,
     backDelay: 750, // pause before backspacing
     fadeOut: true,
     loop: false,
