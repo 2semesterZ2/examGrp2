@@ -533,7 +533,7 @@ color: white;
     font-size: 30px;
     margin-top: 168px;
     margin-left: 616px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .button2 {
@@ -547,7 +547,7 @@ color: white;
     font-size: 30px;
 		margin-top: -113px;
 	margin-left: 539px;
-	background-color: brown;
+	/* background-color: brown; */
 	display: table-caption;
 }
 .button3{
