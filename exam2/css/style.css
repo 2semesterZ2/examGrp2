@@ -263,10 +263,8 @@ display: none;
 	float: left;
 }
 
-.end-call {
-	display: inline-block;
-}
-.popup .end-call .button {
+
+/* .popup .end-call .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
 	background-color: #bc1c1c;
@@ -279,7 +277,7 @@ display: none;
 	font-size: 30px;
 	border-radius: 5px;
 
-}
+} */
 .overlay {
   position: fixed;
   top: 0;
@@ -686,15 +684,28 @@ color: white;
     font-size: 27px;
     border-radius: 5px;
     margin-left: 80px;
-		margin-top: 40px;
+		    margin-top: 5%;
+
+
+
+
  }
+
+ .clearfix {
+     overflow: auto;
+ }
+
 .popup .change-number {
 	display: block;
-
-	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
+float: left;
+    margin-top: 5%;
 }
+
+
+
+.popup .end-call {
+ display: block;
+
 }
 
 
