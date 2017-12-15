@@ -5,16 +5,11 @@
 <title>Page 2</title>
 	<link rel="stylesheet" href="css/style.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 		<script src="js/typed.js"></script>
-		<!-- <script type="">
-
-
-
-		</script> -->
+		<script src="js/typed.js"></script>
 </head>
 
 <body class="body-background" >
-
+<!-- popup window, which doesnt have specific text or links to audio files, and is being used when any button on the phone is clicked.  -->
 	<div id="popup1" class="overlay">
 	    <div class="popup">
 	        <h2>heading</h2>
@@ -29,8 +24,8 @@
 	    </div>
 	</div>
 
-	<!--Button 1-->
 
+<!-- buttons for each number on the phone.  -->
   <div class="box">
 	    <a class="button1" href="#popup1"
 				onclick="playSound('sound/hostel-history.mp3'); setPopupText(button1Heading, button1Paragraph);" ></a>
@@ -44,106 +39,45 @@
 			<a class="button3" href="#popup1" onclick="playSound('sound/voice-lady.mp3'); setPopupText(button3Heading, button3Paragraph);"></a>
 	</div>
 
+	<div class="box">
+		<a class="button4" href="#popup4"></a>
+	</div>
 
-										<!--Button 4-->
-										<div class="box">
-														<a class="button4" href="#popup4"></a>
-										</div>
-														<!--END Button 4-->
-														<!--Sound for number 4-->
-														<!--END Sound for number 4-->
-														<!--Button 5-->
-																		<div class="box">
-																		<a class="button5" href="#popup5"></a>
-														</div>
+	<div class="box">
+		<a class="button5" href="#popup5"></a>
+	</div>
 
-																		<!--END Sound for number 5-->
-																		<!--Button 6-->
-																						<div class="box">
-																						<a class="button6" href="#popup6"></a>
-																		</div>
+	<div class="box">
+		<a class="button6" href="#popup6"></a>
+	</div>
 
+	<div class="box">
+		<a class="button7" href="#popup7"></a>
+	</div>
 
-																						<!--END Sound for number 6-->
-																						<!--Button 7-->
-																										<div class="box">
-																										<a class="button7" href="#popup7"></a>
-																						</div>
-																										<!--END Button 7-->
-																										<!--Sound for number 7-->
+	<div class="box">
+		<a class="button8" href="#popup8"></a>
+	</div>
 
-																										<!--END Sound for number 7-->
-																										<!--Button 8-->
-																														<div class="box">
-																														<a class="button8" href="#popup8"></a>
-																										</div>
-																														<!--END Button 8-->
-																														<!--Sound for number 8-->
+	<div class="box">
+		<a class="button9" href="#popup9"></a>
+	</div>
 
-																														<!--END Sound for number 8-->
-																														<!--Button 9-->
-																																		<div class="box">
-																																		<a class="button9" href="#popup9"></a>
-																														</div>
-																																		<!--END Button 9-->
-																																		<!--Sound for number 9-->
-
-																																		<!--END Sound for number 9-->
-																																		<!--Button 0-->
-																																						<div class="box">
-																																						<a class="button0" href="#popup0"></a>
-																																		</div>
-																																						<!--END Button 0-->
-																																						<!--END Sound for number 0-->
-
-																																							<a href="hallo.html">
-																																							<img class="arrow-left" src="images/arrow-left.png"> </img>
-																																						</a>
-																																						<a href="3page.php">
-																																							<img class="arrow-right" src="images/arrow-right.png"> </img>
-																																						</a>
+	<div class="box">
+		<a class="button0" href="#popup0"></a>
+	</div>
 
 
 
+<!-- arrow which brings to the first page (hallo.html) -->
+	<a href="hallo.html">
+			<img class="arrow-left" src="images/arrow-left.png"> </img>
+	</a>
+<!-- arrow, which brings to the 3rd page (3page.php) -->
+	<a href="3page.php">
+			<img class="arrow-right" src="images/arrow-right.png"> </img>
+	</a>
 
-		<script type="text/javascript">
-
-				var button1Heading = "Hotel history";
-				var button1Paragraph = "Lorem Ipsum is simply dummy text's of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy";
-
-				var button2Heading = "Aarhus guide";
-				var button2Paragraph = "Lorem Ipsum is simply";
-
-				var button3Heading = "Aarhus guide 33";
-				var button3Paragraph = "Lorem Ipsum is simpl 333y";
-
-		    function playSound(audioName) {
-					
-		           var soundElementInPopup = document.getElementById("audiotrack");
-							 soundElementInPopup.src = audioName;
-		           soundElementInPopup.play();
-	       }
-
-				 function setPopupText(heading, paragraph){
-					 document.querySelector(".popup h2").innerText = heading;
-					//  document.querySelector(".popup p").innerText = paragraph;
-
-					//https://codepen.io/lowercase/pen/BCJsf
-					 $(".popup p").typed({
-	            strings: [paragraph],
-	            typeSpeed: 30, // typing speed
-	            backDelay: 750, // pause before backspacing
-	            loop: false, // loop on or off (true or false)
-	            loopCount: false, // number of loops, false = infinite
-	            callback: function(){ } // call function after typing is done
-	        });
-				 }
-
-				 $(".close").on("click",function(){
-					 document.getElementById("audiotrack").pause();
-				 })
-
-	     </script>
-
+		<script src="js/2page.js"></script>
 </body>
 </html>
