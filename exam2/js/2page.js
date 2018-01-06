@@ -51,7 +51,7 @@ function playSound(audioName) {
  function setPopupText(heading, paragraph){
       // update popup heading text
       document.querySelector(".popup h2").innerText = heading;
-      document.querySelector(".popup p").innerText = null; // reset default text of paragraph to be empty, otherwise typed text effect jumps ugly.
+      document.querySelector(".popup p").innerText = null; // reset default text of paragraph to be empty
 
       // sound pauses on X click
       $(".close").on("click",function(){

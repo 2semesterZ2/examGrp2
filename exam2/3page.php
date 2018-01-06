@@ -9,10 +9,8 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 ?>
 <html>
 <head>
-
   <meta charset="utf-8">
-
-  <title>3 Page</title>
+  <title>3rd page</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -20,15 +18,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-
-
-
-
 <body>
-
-
-
-
 <div id="spasiba">
 <h1>Thank you for calling.<br>Hope to hear you again!  </h1>
 <div class="restart">
@@ -48,27 +38,8 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 
 </div>
 <a href="2page.html">
-<img class="three-arrow-left" src="images/arrow-left.png"> </img>
+<img class="three-arrow-left" src="images/arrow-left.png" alt="left-arrow">
 </a>
-
-
-<script type="text/javascript">
-if (window.location.search.indexOf("data") !== -1){
-  $("#spasiba").show();
-}
-
-
-
-
-
-
-
-
-
-
-</script>
-
-
-
+<script src="js/3page.js"></script>
 </body>
 </html>

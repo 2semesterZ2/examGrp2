@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>hallo</title>
-<meta name="description" content="The HTML5 Herald">
-<meta name="author" content="SitePoint">
+<title>1st page</title>
+<meta name="description" content="page represents the ringing phone and offers two options to either pick up or ignore">
+<meta name="author" content="MDC-F17z-2, Team 2, Justina Kanaseviciute, Valerija Krastina, Paulina Kuciak">
+<meta name="keywords" content="hallo hostel, hostel, history, building, telebooth, phone, story, call, aarhus">
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Quattrocento" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/typed.js"></script>
 
@@ -14,9 +15,8 @@
 
 <body>
 <div class="title">
-  <!-- Justynka added this <div id="dots">...<span></span> -->
-  <h1>Incoming call<div id="dots">...<span></span></h1>
-    <!-- It ends here -->
+<!-- self-writing dots -->
+  <h1>Incoming call<div id="dots">...<span></span></div></h1>
 
 </div>
 <div class="phone">
@@ -38,7 +38,6 @@
 <!--Button to ignore the call-->
 <div id="ignore"> <a class="button" href="#ignore-popup">Ignore</a> </div>
 <!--END-->
-<!--Pop up window - You missed a call-->
 </div>
 
 
@@ -64,16 +63,15 @@
 <!-- ignore popup -->
 <div id="ignore-popup" class="overlay">
   <div class="popup">
-    <h2><div id="running-text">Thank you... :(<span></span></h2>
+    <h2>Thank you... :(</h2>
     <a class="close" href="#">&times;</a>
 
     <div class="restart">
         <a class="button" href="hallo.html">restart</a>
     </div>
-
   </div>
 </div>
-</div>
+
 <!--END pop up window-->
 
 

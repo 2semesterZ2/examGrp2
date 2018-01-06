@@ -20,27 +20,25 @@ font-family: 'Inconsolata', monospace;
 	font-size: 45px;
 	margin: 4%;
 }
- /*Justynka did this. Scroll below to see when this shit ends. It's so fucking long omg. This code I used from the website we found*/
- /*The way this code works out is that there is a background on top of the text you want and then it starts appearing letter by letter.*/
- /*To add dots to the same line as our text, I wrote that display option below.*/
- /*Then I changed the background color for the #dots > span compare with the example code and you will see that in example it's white*/
- /*Keyframes shit happening there is the animation itself, speed of our dots appearing and that's it. I will mark where it all ends*/
+
+
+/* style for self-writing dots */
 #dots {
   position: relative;
 	display: inline;
 }
-
+/* this is the block, which is covering dots */
 #dots > span {
     position: absolute;
     right: 0;
     height: 100%;
     background-color: #2e2d2c;
-    animation: Fwrite 2s steps(14, start) infinite;
-    -webkit-animation: Fwrite 2s steps(14, start) infinite;
+    animation: dots 2s steps(14, start) infinite;
 }
 
-
-@keyframes Fwrite {
+/* this part of code is responsible for block moving
+and revealing the dots */
+@keyframes dots {
   0% {
     width: 100%;
   }
@@ -48,48 +46,11 @@ font-family: 'Inconsolata', monospace;
     width: 0;
   }
 }
-
-@keyframes Wbar {
-  0% {
-    border-left-color: transparent;
-  }
-  50% {
-    border-left-color: black;
-  }
-  100% {
-    border-left-color: transparent;
-  }
-}
-
-@-webkit-keyframes Fwrite {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-@-webkit-keyframes Wbar {
-  0% {
-    border-left-color: transparent;
-  }
-  50% {
-    border-left-color: black;
-  }
-  100% {
-    border-left-color: transparent;
-  }
-}
-/*Here it all ends.*/
-/*I actually tried removing everything from these keyframes except one option for "fwrite" with these two widths and it still worked.*/
-/*But I left it just in case, because you are the smart ones here. <3*/
 
 
 audio {
 	width: 100%;
 }
-
 
 #ignore .button {
 	background-color: #bc1c1c;
@@ -231,7 +192,7 @@ display: none;
 .clearfix {
 	overflow: auto;
 }
-
+/* cal button inside popup window  */
 .button {
 	cursor: pointer;
 	transition: all 0.3s ease-out;
@@ -247,37 +208,7 @@ display: none;
 	border-radius: 5px;
 
 }
-.ignore {
-	cursor: pointer;
-	transition: all 0.3s ease-out;
-	background-color: #99b83b;
-	border: none;
-  color: white;
-	font-weight: bold;
-  padding: 18px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-	font-size: 30px;
-	border-radius: 5px;
-	float: left;
-}
 
-
-/* .popup .end-call .button {
-	cursor: pointer;
-	transition: all 0.3s ease-out;
-	background-color: #bc1c1c;
-	border: none;
-	color: white;
-	padding: 18px 35px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 30px;
-	border-radius: 5px;
-
-} */
 .overlay {
   position: fixed;
   top: 0;
@@ -318,11 +249,7 @@ display: none;
   width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
-
 }
-
-
-
 
 #popup2 .popup {
 
@@ -333,9 +260,7 @@ display: none;
   width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
-
 }
-
 
 #popup3 .popup {
 
@@ -700,7 +625,7 @@ color: white;
 float: left;
     margin-top: 5%;
 		font-size: 23px;
-	
+
 }
 
 
