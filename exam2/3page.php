@@ -29,7 +29,7 @@ file_put_contents("./data.txt", "$answer\n", FILE_APPEND);
 
 
 	<div class="question">
-		<h2>Did you learn something new about Hallo hostel?</h2>
+		<h2>Did you learn about our story?</h2>
 <form method="GET" action="./3page.php"  >
 <div class="yes"> <input type="submit" name="data" value="yes"> </div>
 <div class="no"> <input type="submit" name="data" value="no"> </div>
